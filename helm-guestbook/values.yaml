@@ -4,13 +4,14 @@
 
 replicaCount: 1
 image:
-  repository: gcr.io/heptio-images/ks-guestbook-demo
+  #repository: gcr.io/heptio-images/ks-guestbook-demo
+  repository: image-registry.openshift-image-registry.svc:5000/praveen/spring-boot-app
   tag: v3
   pullPolicy: IfNotPresent
-containerPort: 80
+containerPort: 8080
 service:
   type: ClusterIP
-  port: 80
+  port: 8080
 ingress:
   enabled: false
   annotations: {}
