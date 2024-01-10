@@ -6,7 +6,7 @@ replicaCount: 1
 image:
   #repository: gcr.io/heptio-images/ks-guestbook-demo
   repository: image-registry.openshift-image-registry.svc:5000/praveen/spring-boot-app
-  tag: v4
+  tag: v5
   pullPolicy: Always
 containerPort: 8080
 service:
